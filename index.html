@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MebelChel</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__wrap">
+            <div class="header__logo">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="img/main-logo-mobile.png">
+                    <img src="img/main-logo.png" alt="Логотип MebelChel" class="header__logo-img">
+                </picture>
+                <p class="header__logo-text">ИЗГОТОВЛЕНИЕ МЕБЕЛИ<br>НА ЗАКАЗ В ЧЕЛЯБИНСКЕ</p>
+            </div>
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a href="#catalog" class="header__link">КАТАЛОГ</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#order" class="header__link">ЗАЯВКА</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#reviews" class="header__link">ОТЗЫВЫ</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__contact-wrap">
+                <p class="header__tel">8 (999) 444-34-22</p>
+                <p class="header__work-time">с 9 00 до 18 00</p>
+            </div>
+            <button class="header__hamburger hamburger">Открыть меню</button>
+        </div>
+    </header>
+
+    <section class="primary">
+        <picture class="primary__img">
+            <source media="(min-width: 768px) and (max-width: 1000px)" srcset="img/main-picture-tablet.png">
+            <source media="(max-width: 767px)" srcset="img/main-picture-phone.png">
+            <img src="img/main-picture.png" alt="Заглавное изображение">
+        </picture>
+        <div class="container primary__wrap">
+            <div class="primary__info-wrap">
+                <p class="primary__info-1">СОЗДАВАЯ СВОЕ ПРОСТРАНСТВО В&nbsp;ДОМЕ ТОЛЬКО ВЫ РЕШАЕТЕ:</p>
+                <p class="primary__info-2">ПОДСТРАИВАТЬСЯ ПОД МЕБЕЛЬ<br>ИЛИ&nbsp;ВЫБИРАТЬ&nbsp;МЕБЕЛЬ&nbsp;ПОД&nbsp;СЕБЯ</p>
+            </div>
+            <div class="primary__order-wrap">
+                <a href="#order" class="primary__btn">ВЫЗВАТЬ ЗАМЕРЩИКА</a>
+                <p class="primary__btn-text">ЗАКАЖИТЕ ВЫЕЗД ЗАМЕРЩИКА НА ДОМ<br>ЭТО БЕСПЛАТНО</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="catalog" id="catalog">
+        <div class="container catalog__wrap">
+            <div class="catalog__menu-wrap">
+                <h1 class="title catalog__title">КАТАЛОГ</h1>
+                <ul class="catalog__menu">
+                    <li class="catalog__menu-item">
+                        <a href="" class="catalog__link">Шкаф-купе</a>
+                    </li>
+                    <li class="catalog__menu-item">
+                        <a href="" class="catalog__link">Офисная</a>
+                    </li>
+                    <li class="catalog__menu-item">
+                        <a href="" class="catalog__link">Кухни</a>
+                    </li>
+                    <li class="catalog__menu-item">
+                        <a href="" class="catalog__link">Детская</a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="product__list">
+                <li class="product__item">
+                    <picture>
+                        <source media="(max-width: 1000px)" srcset="img/1-tablet.png">
+                        <img src="img/1 1.png" alt="Фото комнаты" class="product__img">
+                    </picture>
+                    <div class="product__btn-wrap">
+                        <div class="product__info-wrap">
+                            <p class="product__name">ДЕТСКАЯ</p>
+                            <p class="product__price">ОТ 15 000</p>
+                        </div>
+                        <button class="product__btn" value="Детская">ЗАКАЗАТЬ</button>
+                    </div>
+                </li>
+                <li class="product__item">
+                    <picture>
+                        <source media="(max-width: 1000px)" srcset="img/2-tablet.png">
+                        <img src="img/2 1.png" alt="Фото комнаты" class="product__img">
+                    </picture>
+                    <div class="product__btn-wrap">
+                        <div class="product__info-wrap">
+                            <p class="product__name">ШКАФ</p>
+                            <p class="product__price">ОТ 39 000</p>
+                        </div>
+                        <button class="product__btn" value="Шкаф">ЗАКАЗАТЬ</button>
+                    </div>
+                </li>
+                <li class="product__item">
+                    <picture>
+                        <source media="(max-width: 1000px)" srcset="img/3-tablet.png">
+                        <img src="img/3 1.png" alt="Фото комнаты" class="product__img">
+                    </picture>
+                    <div class="product__btn-wrap">
+                        <div class="product__info-wrap">
+                            <p class="product__name">КУХНЯ</p>
+                            <p class="product__price">ОТ 78 000</p>
+                        </div>
+                        <button class="product__btn" value="Кухня">ЗАКАЗАТЬ</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="order" id="order">
+        <div class="container order__wrap">
+            <img src="img/image-for-form.png" alt="Фото комнаты" class="order__img">
+            <div class="order__form-wrap">
+                <p class="form__title">Вызвать замерщика на дом</p>
+                <form action="" class="order__form">
+                    <div class="order__user-info">
+                        <label for="order__name">Имя</label><input type="text" id="order__name" class="order__form-text">
+                    </div>
+                    <div class="order__user-info">
+                        <label for="order__tel">Телефон</label><input type="tel" id="order__tel" class="order__form-text">
+                    </div>
+                    <div class="order__btn-wrap">
+                        <p class="order__agreement">*Нажимая кнопку, я&nbsp;даю свое согласение на&nbsp;обработку персональных данных</p>
+                        <button type="submit" class="order__btn">ОТПРАВИТЬ</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+        <div class="container reviews__wrap">
+            <h1 class="title reviews__title">ОТЗЫВЫ</h1>
+            <div class="reviews__slider">
+                    <div class="slide__wrap">
+                        <div class="reviews__user-info">
+                            <img src="img/about_pic.png" alt="Фото Федорова Никиты" class="reviews__user-image">
+                            <div class="reviews__user">
+                                <p class="reviews__user-name">Фёдоров Никита</p>
+                                <a href="https://vk.com" class="reviews__user-link">VK</a>
+                            </div>
+                        </div>
+                        <p class="reviews__text">Заказывал <nobr>шкаф-купе</nobr> в&nbsp;этой компании. Очень доволен. Ребята посоветовали хороший дизайн и&nbsp;помогли подобрать материалы. Изготовили оперативно.</p>
+                    </div>
+                <div class="slide__wrap">
+                    <div class="reviews__user-info">
+                        <img src="img/about_pic2.png" alt="Фото Рязанова Ивана" class="reviews__user-image">
+                        <div class="reviews__user">
+                            <p class="reviews__user-name">Рязанов Иван</p>
+                            <a href="https://vk.com" class="reviews__user-link">VK</a>
+                        </div>
+                    </div>
+                    <p class="reviews__text">Благодарю сотрудников за&nbsp;мою новую кухню. <nobr>Дизайнер-консультант</nobr> помогла с&nbsp;выбором материалов, цветов и&nbsp;самой фурнитуры. Установщик быстро и&nbsp;качественно установил кухню, дал подробную консультацию по&nbsp;эксплуатации.</p>
+                </div>
+                <div class="slide__wrap">
+                    <div class="reviews__user-info">
+                        <img src="img/Nastya.jpg" alt="Фото Александровой Анастасии" class="reviews__user-image">
+                        <div class="reviews__user">
+                            <p class="reviews__user-name">Александрова Анастасия</p>
+                            <a href="https://vk.com" class="reviews__user-link">VK</a>
+                        </div>
+                    </div>
+                    <p class="reviews__text"><p>Спасибо большое, MebelChel, за&nbsp;кухонный гарнитур! Я&nbsp;в&nbsp;полном восторге, всё красиво и&nbsp;аккуратно! Уже заказывала здесь <nobr>шкаф-купе</nobr>, и&nbsp;как всегда на&nbsp;отлично!</p></p>
+                </div>
+                <div class="slide__wrap">
+                    <div class="reviews__user-info">
+                        <img src="img/Tanya.jpg" alt="Фото Елизарьевой Татьяны" class="reviews__user-image">
+                        <div class="reviews__user">
+                            <p class="reviews__user-name">Елизарьева Татьяна</p>
+                            <a href="https://vk.com" class="reviews__user-link">VK</a>
+                        </div>
+                    </div>
+                    <p class="reviews__text">Огромное спасибо, MebelChel, а&nbsp;в&nbsp;частности дизайнеру Диане за&nbsp;кухню моей мечты! Идеальная, стильная и&nbsp;просто шикарная, все на&nbsp;своих местах и&nbsp;ничего лишнего! Спасибо, что вы&nbsp;есть!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="map">
+        <div class="container map__wrap">
+            <div class="descktop__map">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A60efedf3217c8f3279772c7260c8222809e4f289dbad230a7f417617d873475b&amp;width=100%25&amp;height=563&amp;lang=ru_RU&amp;scroll=false"></script>
+            </div>
+            <div class="tablet__map">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A60efedf3217c8f3279772c7260c8222809e4f289dbad230a7f417617d873475b&amp;width=100%25&amp;height=700&amp;lang=ru_RU&amp;scroll=false"></script>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer__wrap">
+            <div class="org-nav-wrap">
+                <div class="org__info">
+                    <p class="org__name"><span class="orangecolor">MebelChel</span> <span class="font-roboto">©</span> 2014-2022</p>
+                    <p class="org__politic">Политика конфиденциальности<br>Копирование материалов запрещено</p>
+                </div>
+                <nav class="footer__nav">
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#catalog" class="footer__link">Каталог</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#order" class="footer__link">Заявка</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#reviews" class="footer__link">Отзывы</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="social__wrap">
+                <a href="https://vk.com" class="reviews__user-link"></a>
+                <a href="https://www.instagram.com/" class="social__link"></a>
+            </div>
+            <div class="contact__wrap">
+                <p class="contact__location">8 (999) 444-33-22 г.&nbsp;Челябинск,&nbsp;ул.&nbsp;Ленина,&nbsp;д.66</p>
+                <p class="contact__mail">mebelchel@yandex.ru</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal">
+        <div class="modal__wrap">
+            <div class="btn__close-wrap">
+                <button class="btn__close">Закрыть</button>
+            </div>
+            <h2 class="modal__title">ОСТАВЬТЕ ЗАЯВКУ И&nbsp;НАШ МЕНЕДЖЕР СВЯЖЕТСЯ С&nbsp;ВАМИ В&nbsp;ТЕЧЕНИЕ 5&nbsp;МИНУТ</h2>
+            <form action="" class="modal__form">
+                <div class="modal__info">
+                    <label for="order__title">Название</label><input type="text" class="modal__input" id="order__title">
+                </div>
+                <div class="modal__info">                    
+                    <label for="user__name">Имя</label><input type="text" class="modal__input" id="user__name">
+                </div>
+                <div class="modal__info">
+                    <label for="user__tel">Телефон</label><input type="tel" class="modal__input" id="user__tel">
+                </div>
+                <div class="btn__submit-wrap">
+                    <p class="modal__agreement">*Нажимая кнопку, я&nbsp;даю свое согласие на&nbsp;обработку персональных данных</p>
+                    <button type="submit" class="btn__submit">Отправить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
